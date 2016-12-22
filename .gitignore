@@ -1,0 +1,10 @@
+.idea/
+.idea_modules/
+.settings
+.cache
+target/
+.project
+.classpath
+metastore_db/
+derby.log
+automationframework/*.iml
