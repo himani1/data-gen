@@ -17,11 +17,6 @@ if [ ! -f target/datagenerator-1.0-SNAPSHOT.jar ]; then
 	echo "Please build the data generator with ./tpch-build.sh first"
 	exit 1
 fi
-which hive > /dev/null 2>&1
-if [ $? -ne 0 ]; then
-	echo "Script must be run where Hive is installed"
-	exit 1
-fi
 
 # Tables in the TPC-H schema.
 TABLES="part partsupp supplier customer orders lineitem nation region"
