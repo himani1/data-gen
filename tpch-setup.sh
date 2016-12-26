@@ -13,6 +13,12 @@ function runcommand {
 	fi
 }
 
+which hdfs > /dev/null 2>&1
+if [ $? -ne 0 ]; then
+	echo "Script must be run where HDFS is installed"
+	exit 1
+fi
+
 if [ ! -f target/datagenerator-1.0-SNAPSHOT.jar ]; then
 	echo "Please build the data generator with ./tpch-build.sh first"
 	exit 1
