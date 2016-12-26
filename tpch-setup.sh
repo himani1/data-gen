@@ -1,5 +1,9 @@
 #!/bin/bash
 
+whoami
+
+pwd
+
 function usage {
 	echo "Usage: tpch-setup.sh scale_factor [temp_directory]"
 	exit 1
